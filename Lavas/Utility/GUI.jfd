@@ -1,0 +1,103 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.8" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Pinq's Lavas"
+			"background": new java.awt.Color( 55, 58, 59, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				"background": &Color0 new java.awt.Color( 32, 34, 97, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :0:0:x, comp buttonBar:::p:374:p}, comp energyValue::t:::x, seq {par l {seq {par l {seq l {space :::p, comp label1:::p:367:p}, comp scrollPane1:::p:373:p}, space :0:0:x}, seq l {space :::p, comp label2:::::x}}, space :::p}}"
+					"$verticalGroup": "par l {seq t {comp label2:::p:16:p, space :p:12:p, comp scrollPane1:::p:94:p, space u:::p, comp label1:::p:26:p, space :::p, comp energyValue:::p::p, space ::7:x, comp buttonBar:::p::p, space :::p}}"
+				} ) {
+					name: "contentPanel"
+					"background": #Color0
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0:1.0, 80"
+						"$rowSpecs": "0, 0"
+						"$hGap": 5
+						"$vGap": 5
+					} ) {
+						name: "buttonBar"
+						"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+						"background": #Color0
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "startButton"
+							"text": "START"
+							"font": new java.awt.Font( "Calibri", 1, 21 )
+							"verticalAlignment": 3
+							"margin": new java.awt.Insets( 0, 0, -3, 0 )
+							"background": #Color0
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startButtonActionPerformed", true ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridwidth": 2
+							"gridheight": 2
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JSlider" ) {
+						name: "energyValue"
+						"minorTickSpacing": 2
+						"majorTickSpacing": 10
+						"paintTicks": true
+						"snapToTicks": true
+						"name": "Energy Value:"
+						"background": #Color0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Energy Value:"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+						"foreground": new java.awt.Color( 229, 229, 229, 255 )
+						"horizontalAlignment": 0
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea1"
+							"text": "- Works best zoomed out\n- Bank: Pure essence, Stamina potion, Earth talisman\n   Dueling ring, Binding necklace\n- Inventory: Earth rune, Lava rune (Placeholder)\n- Equip: Fire tiara\n   "
+							"foreground": new java.awt.Color( 229, 229, 229, 255 )
+							"background": new java.awt.Color( 26, 27, 79, 255 )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "DOES NOT SUPPORT ANY POUCHES"
+						"foreground": new java.awt.Color( 139, 139, 139, 255 )
+						"horizontalAlignment": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, comp title::::362:x, space :::p}}"
+					"$verticalGroup": "par l {seq l {comp title:::p:38:p, space :0:12:x}}"
+				} ) {
+					name: "panel1"
+					"background": #Color0
+					"alignmentX": 9.0f
+					"preferredSize": new java.awt.Dimension( 374, 50 )
+					"foreground": new java.awt.Color( 237, 237, 237, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "title"
+						"text": "Pinq's Lava Runecrafter"
+						"font": new java.awt.Font( "Segoe UI Black", 1, 28 )
+						"foreground": new java.awt.Color( 232, 232, 232, 255 )
+						"horizontalAlignment": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 360 )
+		} )
+	}
+}
